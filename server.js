@@ -8,6 +8,10 @@ const postRouter = require("./routers/postRouter");
 
 const app = express();
 
+//req.body中间件处理
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
 //调用路由文件，并设置好前缀
 app.use("/posts",postRouter);
 
