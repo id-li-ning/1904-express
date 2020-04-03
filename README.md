@@ -14,3 +14,11 @@
 1、M   model  数据层
 2、V   view   视图层
 3、C   controller  控制层 
+
+## 4、接口文档
+
+### 使用步骤
+1、安装apidoc
+2、在每一个路由代码前写上apidoc规定的注释信息
+3、通过apidoc的命令去生成一个api接口文档
+4、访问文档

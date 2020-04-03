@@ -14,9 +14,26 @@ const {
 const router = express.Router();
 
 //定义帖子相关的路由
-//GET /posts
+/**
+ * @api {get} /post 获取帖子列表
+ * @apiName index
+ * @apiGroup post
+ * 
+ *
+ * @apiSuccess {Number} code 错误状态码.
+ * @apiSuccess {String} msg  错误消息.
+ * @apiSuccess {Array} data  帖子数组.
+ */
 router.get('/',index);
-//POST /posts
+/**
+ * @api {get} /post 获取帖子列表
+ * @apiName index
+ * @apiGroup post
+ * @apiParam {String} title  帖子标题.
+ *@apiParam {Stting} content  帖子内容.
+ * @apiSuccess {Number} code 错误状态码.
+ * @apiSuccess {String} msg  错误消息.
+ */
 router.post("/",create);
 //PUT / posts/:id
 router.put('/:id',update);
